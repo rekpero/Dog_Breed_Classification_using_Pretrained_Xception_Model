@@ -1,0 +1,16 @@
+{
+    "test_path": "test", 
+    "features_path": "output/xception/features.h5", 
+    "include_top": "false", 
+    "weigths": "imagenet", 
+    "results": "output/xception/results.txt", 
+    "labels_path": "output/xception/labels.h5", 
+    "classifier_path": "output/xception/classifier.pickle", 
+    "seed": 9, 
+    "weights": "imagenet", 
+    "model_path": "output/xception/model", 
+    "test_size": 0.1, 
+    "model": "xception", 
+    "train_path": "train", 
+    "num_classes": 120
+}
