@@ -1,6 +1,6 @@
 # Dog_Breed_Classification_using_Pretrained_Xception_Model
 
-This code is for "Dog Breed Classification using Pretrained Models". In this code, we will be using the pre-trained Deep Neural Nets, which is trained on the ImageNet challenge that are made publicly available in Keras. We will specially use Kaggle Dataset of Flower Recognition.
+This code is for "Dog Breed Classification using Pretrained Models". In this code, we will be using the pre-trained Deep Neural Nets, which is trained on the ImageNet challenge that are made publicly available in Keras. We will specially use Kaggle Dataset of Dog Breed Classification.
 The pre-trained models we will consider are VGG16, VGG19, Inception-v3, Xception, ResNet50, InceptionResNetv2 and MobileNet. We are mainly using "Pretrained Xception Model".
 # Organizing the Dataset
 The dataset you will be provided is in Raw Form. So its better to Organize the dataset first. For this you have to run the python program 'data_organizer.py'. This will automatically copy the image to the destination path. Also you have to input relevent info regarding 'path to raw dataset', 'path to training dataset'. The CSV file named 'labels.csv' has all image ids and its respective labels so we will take image from source path to copy it to newly created label directory.
@@ -13,7 +13,7 @@ Thus, we can use a Convolutional Neural Network as a Feature Extractor by taking
 For extracting features using ConvNets, you have to run the python program 'features_extractor.py'. This will automatically encode the Labels and store labels and features in the disk in '.h5' format. The weigths are also saved in the disks in both '.json' and '.h5' format. The code will automatically generate 'output' folder and save labels, features and model in respective models folder.
 # Classifying the Dataset
 Basically, Logistic Regression is used as classifier in this code. The tensor for features is 1D so Logistic Regression will fit best in this case. For classifying, you have to run the python program 'dog_breed_classifier.py'. This will automatically train the classifier and find the accuracy from 1st Rank and 5th Rank, also a classificaton report and save it to 'Result.txt' file. It also generate a confusion matrix with is saved as 'confusion_matrix.jpg'.
-# Predictng Flowers directly from URL
+# Predictng Dog Breed directly from URL
 In this code, I have added a user input url for prediction. For this, you have to run the python program 'prediction.py' where you have to provide a url link having image of any flower. This will automatically retrive the image and save it to local memory. Then, it will automatically load the image and extract its features same way as earlier. And it will predict the class for the image. The picture will be displayed or saved in the local machine with its predicted value.
 
 # Dependencies
